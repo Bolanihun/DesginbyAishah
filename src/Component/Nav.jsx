@@ -1,8 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import ProjectDropdown from "./ProjectDropdown";
 
 export default function Nav() {
+  const [openProjectMenu, setopenProjectMenu] = useState(false);
   return (
     <>
       {/* <div className='nav' id='nav-wrapper'></div> */}
@@ -21,7 +23,7 @@ export default function Nav() {
             </li>
             <li>
             <Link to="/Project">Projects
-                <div className="icon">
+                <div className="icon" onClick={()=> setopenProjectMenu((prev)=>!prev)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -38,8 +40,10 @@ export default function Nav() {
                   </svg>
                 </div>
                 </Link>
+                {
+                  openProjectMenu &&  <ProjectDropdown/>
+                }
              
-              <ProjectDropdown/>
             </li>
           </div>
 
