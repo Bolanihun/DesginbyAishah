@@ -5,8 +5,3 @@ import router from "./routes/index.jsx";
 import App from './App.jsx';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  
-   <RouterProvider router={router}/>
-  
-)

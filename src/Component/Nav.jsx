@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import ProjectDropdown from "./ProjectDropdown";
 
 export default function Nav() {
@@ -12,18 +13,14 @@ export default function Nav() {
           </div>
           <div className="mid-nav">
             <li>
-              {" "}
-              <a href="#"> Home </a>
+               <Link to="/"> Home </Link>
             </li>
             <li>
-              {" "}
-              <a href="#"> About </a>
+            <Link to="/About"> About </Link>
+              
             </li>
             <li>
-              {" "}
-              <a href="#">
-                {" "}
-                Projects{" "}
+            <Link to="/Project">Projects
                 <div className="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +36,9 @@ export default function Nav() {
                       stroke-linecap="round"
                     />
                   </svg>
-                </div>{" "}
-              </a>
+                </div>
+                </Link>
+             
               <ProjectDropdown/>
             </li>
           </div>
@@ -48,6 +46,7 @@ export default function Nav() {
           <button className="primary-btn">Resume</button>
         </ul>
       </nav>
+      <Outlet />
     </>
   );
 }
