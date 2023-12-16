@@ -6,7 +6,7 @@ export default function Project() {
       <section className="Project">
         <h2 className="project-title">Featured Projects</h2>
         <div className="projects">
-          <div className="row1-project">
+          <div className="row1-project md:container md:mx-auto">
             <div className="media">
               <div className="text-content">
                 <h3>Project</h3>
@@ -19,8 +19,8 @@ export default function Project() {
             </div>
           </div>
 
-          <div className="row2-project">
-            <div className="projectlist">
+          <div className="row2-project md:container md:mx-auto max-md:flex-col ">
+            <div className="projectlist max-md:basis-3/4">
               <div className="project-content">
                 <div className="projectTextContent">
                   <h3>Project</h3>
@@ -41,7 +41,7 @@ export default function Project() {
               </div>
             </div>
 
-            <div className="projectlist">
+            <div className="projectlist max-md:basis-9/12">
               <div className="project-content">
                 <div className="projectTextContent">
                   <h3>Project</h3>
@@ -62,7 +62,7 @@ export default function Project() {
               </div>
             </div>
 
-            <div className="projectlist">
+            <div className="projectlist max-md:basis-9/12">
               <div className="project-content">
                 <div className="projectTextContent">
                   <h3>Project</h3>

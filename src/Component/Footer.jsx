@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="footer-content">
-          <h1>Get In Touch with me!</h1>
+          <h1 className="max-sm:text-2xl">Get In Touch with me!</h1>
           <div className="socials">
             <div className="icons">
               <span className="linkedin">
@@ -66,7 +66,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mail">
-              <a href="mailto:aishatbusari817@gmail.com">
+              <a href="mailto:aishatbusari817@gmail.com" className="text-base max-sm:text-xs">
                 aishatbusari817@gmail.com
               </a>
             </p>

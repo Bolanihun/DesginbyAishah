@@ -8,6 +8,7 @@ export default function Nav() {
   return (
     <>
       {/* <div className='nav' id='nav-wrapper'></div> */}
+      <div class="bgblur"></div>
       <nav>
         <ul>
           <div className="nav-left">
