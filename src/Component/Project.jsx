@@ -3,8 +3,8 @@ import React from "react";
 export default function Project() {
   return (
     <>
-      <section className="Project">
-        <h2 className="project-title">Featured Projects</h2>
+      <section className="Project my-28">
+        <h2 className="project-title  mb-4">Featured Projects</h2>
         <div className="projects">
           <div className="row1-project md:container md:mx-auto">
             <div className="media">

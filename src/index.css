@@ -24,6 +24,12 @@
 
   --black1-color: #1d1d1d;
   --black2-color: #46332e;
+  --gradient-100: -webkit-linear-gradient(
+    219deg,
+    rgba(249, 100, 51, 1) -2.36%,
+    rgba(249, 100, 51, 0) 24.43%,
+    rgba(249, 100, 51, 0) 73.7%,
+    rgba(249, 100, 51, 1) 103.17%);
   --gradient-101: linear-gradient(
     180deg,
     rgba(254, 184, 113, 0.6) 45.06%,
@@ -459,9 +465,9 @@ font-size: 61px; */
   align-items: center;
 }
 
-.dropdown-container li{
+.dropdown-container li {
   width: 100%;
-  padding: 5px 30px 4px 31px; 
+  padding: 5px 30px 4px 31px;
 }
 
 .dropdown-container li a {
@@ -481,7 +487,52 @@ font-size: 61px; */
   letter-spacing: 0.32px;
   transition: all 10ms;
 }
-.dropdown-container li a:hover{
-  background: var(--orange-color, #F96433);
+.dropdown-container li a:hover {
+  background: var(--orange-color, #f96433);
   color: var(--bg1-color);
+}
+
+/*SKILLS*/
+
+.skill-textcontent h2 {
+  font-family: var(--font-familyDisplay);
+}
+.skill-textcontent p {
+  font-family: var(--font-familyBody);
+}
+.skill-cards .title {
+  font-family: var(--font-familyDisplay);
+}
+.skill-cards {
+  
+  
+  
+}
+.skill-cards li {
+  font-family: var(--font-familyDisplay);
+}
+
+.skill-cards .card {
+
+  border-radius: 8px;
+  border: 3px solid var(--gradient-100, #f96433);
+  background: rgba(249, 100, 51, 0.04);
+  box-shadow: 4px 12px 16px 0px rgba(249, 100, 51, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+/*EXPERTISE*/
+/* .Expertise-wrapper{
+  display: flex;
+} */
+.Expertise-title h2{
+  font-family: var(--font-familyDisplay);
+}
+
+.Expertise-title p{
+  font-family: var(--font-familyBody);
+}
+
+.row .title{
+  font-family: var(--font-familyDisplay);
 }

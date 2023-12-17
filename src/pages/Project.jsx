@@ -5,7 +5,7 @@ export default function Projects(){
     return(
         <>
         <Project/>
-        <h1>Project</h1>
+        
 
 
         </>
