@@ -7,7 +7,7 @@ export default function Skills() {
         <div className="skills-wrapper flex space-x-80">
           <div className="skill-textcontent flex flex-col">
             <h2 className="mb-5 text-white text-5xl">Design Philosophy</h2>
-            <p className="w-80 text-white text-base tracking-wider">
+            <p className="w-96 text-white text-base tracking-wider">
               In my design journey, I blend innovation with usability, aiming
               for designs that not only look beautiful but also enhance the
               user's journey. My love for clean, intuitive interfaces is matched
@@ -75,7 +75,7 @@ export default function Skills() {
         <div className="skills-wrapper flex space-x-80">
           <div className="skill-textcontent flex flex-col">
             <h2 className="mb-5 text-white text-5xl">Development Expertise</h2>
-            <p className="w-80 text-white text-base tracking-wider">
+            <p className="w-2/3 text-white text-base tracking-wider">
               As a frontend developer, I specialize in crafting responsive and
               performant web applications. Proficient in HTML, CSS, and
               JavaScript, I bring designs to life with frameworks like React.js.

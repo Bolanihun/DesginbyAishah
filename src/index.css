@@ -29,7 +29,8 @@
     rgba(249, 100, 51, 1) -2.36%,
     rgba(249, 100, 51, 0) 24.43%,
     rgba(249, 100, 51, 0) 73.7%,
-    rgba(249, 100, 51, 1) 103.17%);
+    rgba(249, 100, 51, 1) 103.17%
+  );
   --gradient-101: linear-gradient(
     180deg,
     rgba(254, 184, 113, 0.6) 45.06%,
@@ -322,15 +323,14 @@ h1 {
     rgba(249, 100, 51, 0) 73.7%,
     rgba(249, 100, 51, 1) 103.17%
   );
-
-  border: 2px solid -webkit-linear-gradient(219deg, rgba(249, 100, 51, 1) -2.36%, rgba(
-          249,
-          100,
-          51,
-          0
-        )
-        24.43%, rgba(249, 100, 51, 0) 73.7%, rgba(249, 100, 51, 1) 103.17%);
+  border: 2px solid var(--orange-color);
   border-radius: 16px;
+}
+
+.projectlitem {
+  border: 2px solid var(--orange-color);
+  border-radius: 16px;
+  height: 400px;
 }
 
 .project-content {
@@ -338,6 +338,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 4px;
+}
+.projectContent{
+  align-items: start;
+  justify-content: start;
 }
 .projectTextContent {
   display: flex;
@@ -358,11 +362,26 @@ h1 {
   font-weight: 400;
   /* line-height: 100%; 39px */
 }
+.projecttextContent h3{
+  font-family: var(--font-familyDisplay);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
 
 .projectTextContent p {
   width: 392px;
   color: var(--white-color);
   /* Sans/md2 */
+  font-family: var(--font-familyBody);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.32px;
+}
+
+.projecttextContent p{
   font-family: var(--font-familyBody);
   font-size: 16px;
   font-style: normal;
@@ -392,6 +411,7 @@ h1 {
   opacity: 1;
 }
 
+/*FOOTER*/
 footer {
   width: 100%;
   height: 400px;
@@ -504,16 +524,12 @@ font-size: 61px; */
   font-family: var(--font-familyDisplay);
 }
 .skill-cards {
-  
-  
-  
 }
 .skill-cards li {
   font-family: var(--font-familyDisplay);
 }
 
 .skill-cards .card {
-
   border-radius: 8px;
   border: 3px solid var(--gradient-100, #f96433);
   background: rgba(249, 100, 51, 0.04);
@@ -525,14 +541,14 @@ font-size: 61px; */
 /* .Expertise-wrapper{
   display: flex;
 } */
-.Expertise-title h2{
+.Expertise-title h2 {
   font-family: var(--font-familyDisplay);
 }
 
-.Expertise-title p{
+.Expertise-title p {
   font-family: var(--font-familyBody);
 }
 
-.row .title{
+.row .title {
   font-family: var(--font-familyDisplay);
 }
